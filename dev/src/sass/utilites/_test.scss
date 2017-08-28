@@ -1,0 +1,33 @@
+/* Test Sass */
+.test_sass {
+  display: block;
+
+  &__el {
+    display: inline;
+  }
+}
+
+/* test PostCSS */
+.test_postcss {
+  margin: 1rem;
+}
+
+/* test Autoprefixer */
+.test_autoprefixer:fullscreen {
+  display: block;
+}
+
+/* test CSSNext */
+.test_cssnext {
+  all: initial;
+}
+
+/* test cssnano */
+.test_cssnamo {
+  min-width: initial;
+}
+
+/* test browserlist */
+.test_browserlist {
+  background: rgba(0, 0, 0, 0.5);
+}

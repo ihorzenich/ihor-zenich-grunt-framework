@@ -1,0 +1,42 @@
+default:
+  description: 'Start without options'
+  tasks:
+    - prod
+    - server
+
+prod:
+  description: 'All build tasks'
+  tasks:
+    - clean
+    - html
+    - css
+    - js
+    - img
+
+html:
+  description: 'HTML Tasks'
+  tasks:
+    - 'pug'
+#    - 'htmllint'
+css:
+  description: 'CSS Tasks'
+  tasks:
+    - 'sass'
+    - 'postcss'
+    - 'csslint'
+    - 'stylelint'
+js:
+  description: 'JS Tasks'
+  tasks:
+    - 'jshint'
+    - 'concat'
+    - 'uglify'
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'newer:imagemin'
+server:
+  description: 'Start webserver & Watch'
+  tasks:
+    - connect
+    - watch

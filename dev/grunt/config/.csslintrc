@@ -1,0 +1,36 @@
+{
+  // CSSLint errors
+  "bulletproof-font-face": false, // Does not take into consideration IE9 Compat mode, see: http://blog.fontspring.com/2011/02/further-hardening-of-the-bulletproof-syntax
+
+  // We want write modern css!
+  "box-sizing": false,
+  "adjoining-classes": false,
+
+  // We use PostCSS-Autoprefixer
+  "gradients": false,
+  "compatible-vendor-prefixes": false,
+
+  // Allow Safety CSS Hacks
+  "star-property-hack": false,        // IE8-
+  "underscore-property-hack": false,  // IE7-
+
+  // Stupid rules
+  "box-model": false,           // Developers know what is box model!
+  "empty-rules": false,         // Empty rules are useful for describing the layout
+  "floats": false,              // Grids can't fully replace floats
+  "order-alphabetical": false,  // Alphabetical order in CSS isn't useful, should use CSSComb instead
+
+  // OOCSS didn't suitable for real life. BEM does.
+  "qualified-headings": false,
+  "unique-headings": false,
+  "font-sizes": false,
+
+  // CSSNext properties
+  "known-properties": false,
+  "display-property-grouping": false,
+
+  // Allow Chrome-only hacks like -webkit-backface-visibility: hidden;
+  "vendor-prefix": false
+
+  // -- Project-based
+}
